@@ -1,5 +1,5 @@
 import Navigo from "navigo"; // When using ES modules.
-import { HomePage } from "./page/Homepage";
+import { HomePage } from "./page/HomePage";
 import { AboutPage } from "./page/AboutPage";
 
 const router = new Navigo();
