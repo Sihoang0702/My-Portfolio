@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/vendors/linericon/style.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="/css/magnific-popup.css">
+	<link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+	<div id="app"></div>
+	<script type="module" src="./src/main.js"></script>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/popper.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/stellar.js"></script>
+	<script src="/js/jquery.magnific-popup.min.js"></script>
+	<script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="/vendors/isotope/isotope-min.js"></script>
+	<script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="/js/jquery.ajaxchimp.min.js"></script>
+	<script src="/js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="/js/gmaps.min.js"></script>
+	<script src="/js/theme.js"></script>
+	<script src="/js/jquery.counterup.min.js"></script>
+	<script src="/js/jquery.waypoints.min.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$(".filter-b").click(function () {
+				var value = $(this).attr('data-filter');
+				if (value == "all") {
+					$('.filter').show('1000');
+				}
+				else {
+					$(".filter").not('.' + value).hide('3000');
+					$('.filter').filter('.' + value).show('3000');
+				}
+			});
+
+			if ($(".filter-b").removeClass("active")) {
+				$(this).removeClass("active");
+			}
+			$(this).addClass("active");
+		});
+
+		// SKILLS
+		$(function () {
+			$('.counter').counterUp({
+				delay: 10,
+				time: 2000
+			});
+
+		});
+	</script>
+	<script src="/js/jquery.ajaxchimp.min.js"></script>
+</body>
+
+</html>
